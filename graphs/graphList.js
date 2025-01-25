@@ -3,7 +3,7 @@ class Graph {
     this.adjacencyList = {};
   }
 
-  // add a vertex
+  // adds a vertex
   addVertex(vertex) {
     //check if the vertex already exists
     if (!this.adjacencyList[vertex]) {
@@ -11,9 +11,9 @@ class Graph {
     }
   }
 
-  // remove a vertex
+  // removes a vertex
   removeVertex(vertex) {
-    //check if the vertex exists
+    //checks if the vertex already exists
     if (this.adjacencyList[vertex]) {
       // remove all edges associated with it
       while (this.adjacencyList[vertex].length) {
@@ -24,7 +24,7 @@ class Graph {
     }
   }
 
-  // add an edge
+  // adds an edge
   addEdge(v1, v2) {
     // check if the nodes exists
     if (this.adjacencyList[v1] && this.adjacencyList[v2]) {
